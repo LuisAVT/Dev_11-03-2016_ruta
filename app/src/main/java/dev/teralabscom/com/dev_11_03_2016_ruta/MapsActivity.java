@@ -1,4 +1,4 @@
-package com.company.ruta_a_tiempo_app;
+package dev.teralabscom.com.dev_11_03_2016_ruta;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -325,7 +325,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 // Otherwise, set the URL to null.
                 Uri.parse("http://host/path"),
                 // TODO: Make sure this auto-generated app deep link URI is correct.
-                Uri.parse("android-app://com.company.ruta_a_tiempo_app/http/host/path")
+                Uri.parse("android-app://dev.teralabscom.com.dev_11_03_2016_ruta/http/host/path")
         );
 
         from = (AutoCompleteTextView) findViewById(R.id.from);
@@ -354,7 +354,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 // Otherwise, set the URL to null.
                 Uri.parse("http://host/path"),
                 // TODO: Make sure this auto-generated app deep link URI is correct.
-                Uri.parse("android-app://com.company.ruta_a_tiempo_app/http/host/path")
+                Uri.parse("android-app://dev.teralabscom.com.dev_11_03_2016_ruta/http/host/path")
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();

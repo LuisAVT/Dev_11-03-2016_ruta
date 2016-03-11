@@ -1,4 +1,4 @@
-package com.company.ruta_a_tiempo_app;
+package dev.teralabscom.com.dev_11_03_2016_ruta;
 
 import android.content.Context;
 import android.widget.ArrayAdapter;
