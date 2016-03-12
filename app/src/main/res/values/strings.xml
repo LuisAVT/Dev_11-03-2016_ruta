@@ -217,4 +217,5 @@
         <item>Queja</item>
         <item>Sugerencia</item>
     </string-array>
+    <string name="title_activity_info_route">InfoRouteActivity</string>
 </resources>
