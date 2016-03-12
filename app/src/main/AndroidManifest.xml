@@ -80,8 +80,8 @@
                 android:value=".MapsActivity" />
         </activity>
         <activity
-            android:name=".FavsActivity"
-            android:label="@string/favs"
+            android:name=".Report"
+            android:label="Reportar"
             android:parentActivityName=".MapsActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
