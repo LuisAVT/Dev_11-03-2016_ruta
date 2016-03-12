@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="dev.teralabscom.com.dev_11_03_2016_ruta.InfoUnit">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleMarginBottom="32dp"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/unidad2417"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/anim_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".Info_Unit">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/ratingtext1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stars_title"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/ratingline1"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/ratingtext1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                />
+
+            <RatingBar
+                android:id="@+id/ratingunit"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/ratingline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="0"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/ratingedit1"
+                android:layout_below="@+id/ratingunit"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/ratingequipment"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingedit1"
+                android:text="@string/unit_equipment"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/ratingline2"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ratingequipment"
+                android:background="#ffffff"/>
+
+            <ImageView
+                android:id="@+id/equipimg1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/ratingline2"
+                android:src="@drawable/iconac"/>
+
+            <ImageView
+                android:id="@+id/equipimg2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_above="@+id/ratingseats"
+                android:layout_toRightOf="@+id/equipimg1"
+                android:layout_toEndOf="@+id/equipimg1"
+                android:src="@drawable/iconwifi"/>
+
+            <ImageView
+                android:id="@+id/equipimg3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_above="@+id/ratingseats"
+                android:layout_toRightOf="@+id/equipimg2"
+                android:layout_toEndOf="@+id/equipimg2"
+                android:src="@drawable/iconcam"/>
+
+            <ImageView
+                android:id="@+id/equipimg4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_above="@+id/ratingseats"
+                android:layout_toRightOf="@+id/equipimg3"
+                android:layout_toEndOf="@+id/equipimg3"
+                android:src="@drawable/icontv"/>
+
+            <TextView
+                android:id="@+id/ratingseats"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seats_title"
+                android:layout_below="@id/equipimg1"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/ratingline3"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/ratingseats"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"/>
+
+            <ImageView
+                android:id="@+id/seatsimg1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/ratingline3"
+                android:src="@drawable/iconembarazada"/>
+
+            <ImageView
+                android:id="@+id/seatsimg2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/seatsimg1"
+                android:layout_alignLeft="@+id/equipimg2"
+                android:layout_alignStart="@+id/equipimg2"
+                android:src="@drawable/iconbebe"/>
+
+            <ImageView
+                android:id="@+id/seatsimg3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/seatsimg2"
+                android:layout_alignLeft="@+id/equipimg3"
+                android:layout_alignStart="@+id/equipimg3"
+                android:src="@drawable/iconviejillo"/>
+
+            <ImageView
+                android:id="@+id/seatsimg4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/seatsimg3"
+                android:layout_alignLeft="@+id/equipimg4"
+                android:layout_alignStart="@+id/equipimg4"
+                android:src="@drawable/icondiscapacitado"/>
+
+            <TextView
+                android:id="@+id/ratingspecs"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unit_specs"
+                android:layout_below="@id/seatsimg1"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/ratingline4"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/ratingspecs"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:id="@+id/unit_model"
+                android:layout_below="@+id/ratingline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/unit_model"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/unit_model_name"
+                android:layout_below="@+id/unit_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/model_name"/>
+
+            <TextView
+                android:id="@+id/unit_brand"
+                android:layout_below="@+id/unit_model_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/unit_brand"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/unit_brand_name"
+                android:layout_below="@+id/unit_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/brand_name" />
+
+            <TextView
+                android:id="@+id/unit_manufact"
+                android:layout_below="@+id/unit_brand_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/manufact_year"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/unit_manufact_year"
+                android:layout_below="@+id/unit_manufact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/year_number"/>
+
+            <TextView
+                android:id="@+id/unit_licplates"
+                android:layout_below="@+id/unit_manufact_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/lic_plate"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/unit_licplates_num"
+                android:layout_below="@+id/unit_licplates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/plate_number"/>
+
+            <TextView
+                android:id="@+id/unit_capacity"
+                android:layout_below="@+id/unit_licplates_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/unit_capacity"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/unit_capacity_num"
+                android:layout_below="@+id/unit_capacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/capacity_number"/>
+
+            <TextView
+                android:id="@+id/unit_maintenance"
+                android:layout_below="@+id/unit_capacity_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/unit_maintenance"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/unit_maintenance_date"
+                android:layout_below="@+id/unit_maintenance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/maintenance_date"/>
+
+            <TextView
+                android:id="@+id/driverinturn"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unit_driver"
+                android:layout_below="@id/unit_maintenance_date"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/ratingline5"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/driverinturn"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"/>
+
+            <ImageView
+                android:id="@+id/driverimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/ratingline5"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_account_circle_black_24dp"/>
+            <TextView
+                android:id="@+id/drivername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drivername"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/ratingline5"
+                android:layout_alignLeft="@+id/ratingdriver"
+                android:layout_alignStart="@+id/ratingdriver"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="32dp"/>
+
+            <RatingBar
+                android:id="@+id/ratingdriver"
+                android:numStars="5"
+                android:rating="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/driverimg"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/ratingedit2"
+                android:layout_below="@+id/ratingdriver"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

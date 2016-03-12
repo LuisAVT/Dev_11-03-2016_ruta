@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="dev.teralabscom.com.dev_11_03_2016_ruta.InfoUnit">
+    <item
+        android:id="@+id/unit_report"
+        android:orderInCategory="100"
+        android:title="Reportar"
+        app:showAsAction="never" />
+</menu>

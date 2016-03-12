@@ -82,6 +82,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private static final LatLng PCMTY0194 = new LatLng(25.71294532, -100.3623418);
     private static final LatLng PBMTY0195 = new LatLng(25.71092075, -100.3605763);
     private static final LatLng PBMTY0196 = new LatLng(25.70904277, -100.3580612);
+    private static final LatLng PBMTY0966 = new LatLng(25.70075728, -100.3050754);
+    private static final LatLng PBMTY0967 = new LatLng(25.66659544, -100.3090048);
+    private static final LatLng PBMTY0968 = new LatLng(25.66843344, -100.3086761);
+    private static final LatLng PBMTY0969 = new LatLng(25.67061381, -100.3082111);
+    private static final LatLng PBMTY0971 = new LatLng(25.67377348, -100.3075438);
 
     static LatLng HAMBURG = new LatLng(53.558, 9.927);
     static LatLng KIEL = new LatLng(53.551, 9.993);
@@ -187,11 +192,15 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        switch (item.getItemId()) {
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+            case R.id.action_favorite:
+                Intent intent = new Intent(this, ShowRoute.class);
+                startActivity(intent);
+                break;
+
+            default:
+                break;
         }
 
         return super.onOptionsItemSelected(item);
@@ -555,6 +564,31 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap.addMarker(new MarkerOptions()
                 .position(PBMTY0196)
                 .title("A. Ruiz Cortines Pte-Ote & Nueva Inglaterra")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.bus_stop)));
+
+        mMap.addMarker(new MarkerOptions()
+                .position(PBMTY0966)
+                .title("Dr. Coss Sur-Nte & Begonia")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.bus_stop)));
+
+        mMap.addMarker(new MarkerOptions()
+                .position(PBMTY0967)
+                .title("Dr. Coss Sur-Nte & Morelos")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.bus_stop)));
+
+        mMap.addMarker(new MarkerOptions()
+                .position(PBMTY0968)
+                .title("Dr. Coss Sur-Nte & Matamoros")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.bus_stop)));
+
+        mMap.addMarker(new MarkerOptions()
+                .position(PBMTY0969)
+                .title("Dr. Coss Sur-Nte & Juan Ignacio Ramón")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.bus_stop)));
+
+        mMap.addMarker(new MarkerOptions()
+                .position(PBMTY0971)
+                .title("Dr. Coss Sur-Nte & Washington")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.bus_stop)));
     }
 
