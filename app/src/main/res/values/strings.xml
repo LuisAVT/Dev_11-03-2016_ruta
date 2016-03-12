@@ -234,6 +234,9 @@
         <item>Queja</item>
         <item>Sugerencia</item>
     </string-array>
+<<<<<<< HEAD
+    <string name="title_activity_info_route">InfoRouteActivity</string>
+=======
 
     <!-- InfoUnit Activity-->
     <string name="title_activity_show_route">Ver Ruta</string>
@@ -260,4 +263,5 @@
     <string name="unit_driver">Califica el servicio del operador en turno</string>
     <string name="drivername">Roberto Sánchez</string>
 
+>>>>>>> 9cb7f8085bc879df9ba6c33eb55d883ab4766f39
 </resources>

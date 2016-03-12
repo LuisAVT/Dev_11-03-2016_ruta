@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.teralabscom.com.dev_11_03_2016_ruta">
+    package="dev.teralabscom.com.dev_11_03_2016_ruta" >
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -22,11 +22,11 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
             android:label="Ruta@Tiempo"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -52,7 +52,7 @@
         <activity
             android:name=".MapsActivity"
             android:label="Ruta@Tiempo"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -105,7 +105,11 @@
         <activity
             android:name=".ShareActivity"
             android:label="@string/title_activity_share"
+<<<<<<< HEAD
+            android:parentActivityName=".MapsActivity" >
+=======
             android:parentActivityName=".MapsActivity">
+>>>>>>> 9cb7f8085bc879df9ba6c33eb55d883ab4766f39
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
@@ -113,7 +117,11 @@
         <activity
             android:name=".QualifyActivity"
             android:label="@string/title_activity_qualify"
+<<<<<<< HEAD
+            android:parentActivityName=".MapsActivity" >
+=======
             android:parentActivityName=".MapsActivity">
+>>>>>>> 9cb7f8085bc879df9ba6c33eb55d883ab4766f39
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
@@ -121,12 +129,21 @@
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
+<<<<<<< HEAD
+            android:parentActivityName=".MapsActivity" >
+=======
             android:parentActivityName=".MapsActivity">
+>>>>>>> 9cb7f8085bc879df9ba6c33eb55d883ab4766f39
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
         </activity>
         <activity
+<<<<<<< HEAD
+            android:name=".InfoRouteActivity"
+            android:label="@string/title_activity_info_route"
+            android:theme="@style/AppTheme.NoActionBar" >
+=======
             android:name=".ShowRoute"
             android:label="@string/title_activity_show_route"
             android:parentActivityName=".MapsActivity"
@@ -143,6 +160,7 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dev.teralabscom.com.dev_11_03_2016_ruta.ShowRoute" />
+>>>>>>> 9cb7f8085bc879df9ba6c33eb55d883ab4766f39
         </activity>
     </application>
 
