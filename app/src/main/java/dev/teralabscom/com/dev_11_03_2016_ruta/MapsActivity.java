@@ -35,8 +35,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.loopj.android.http.AsyncHttpClient;
 
-import java.util.Arrays;
-
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback,
                                                     NavigationView.OnNavigationItemSelectedListener {
     private GoogleMap mMap;
