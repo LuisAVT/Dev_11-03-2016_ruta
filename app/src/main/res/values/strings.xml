@@ -58,20 +58,14 @@
     <string name="custom_info_window">Custom info window</string>
     <string name="default_info_window">Default info window</string>
     <string name="down_arrow">\u2193</string>
-    <string name="drag_melbourne">Drag Melbourne</string>
-    <string name="duration">Custom Duration</string>
+
     <string name="hue">Hue</string>
-    <string name="events_demo_label">Events</string>
-    <string name="events_demo_description">Demonstrates event handling.</string>
     <string name="fade_in">Fade In Tiles</string>
     <string name="fill_alpha">Fill Alpha</string>
     <string name="fill_hue">Fill Hue</string>
     <string name="flat">Flat</string>
-    <string name="go_to_bondi">Go to Bondi</string>
-    <string name="go_to_santorini">Go to Santorini</string>
-    <string name="go_to_sydney">Go to Sydney</string>
-    <string name="ground_overlay_demo_label">Ground Overlays</string>
-    <string name="ground_overlay_demo_description">Demonstrates how to add a GroundOverlay to a map.</string>
+
+    <!--Map Type-->
     <string name="hybrid">Hybrid</string>
     <string name="indoor">Indoor</string>
     <string-array name="layers_array">
