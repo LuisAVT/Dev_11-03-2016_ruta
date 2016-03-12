@@ -234,5 +234,34 @@
         <item>Queja</item>
         <item>Sugerencia</item>
     </string-array>
+<<<<<<< HEAD
     <string name="title_activity_info_route">InfoRouteActivity</string>
+=======
+
+    <!-- InfoUnit Activity-->
+    <string name="title_activity_show_route">Ver Ruta</string>
+
+    <!-- InfoUnit Activity-->
+    <string name="title_activity_info_unit">Información de Unidad</string>
+    <string name="stars_title">¿Cómo calificas esta unidad?</string>
+    <string name="stars_cuantity">0</string>
+    <string name="unit_equipment">Equipada con</string>
+    <string name="seats_title">Asientos reservados</string>
+    <string name="unit_specs">Especificaciones</string>
+    <string name="unit_model">Modelo</string>
+    <string name="model_name">Linner</string>
+    <string name="unit_brand">Marca</string>
+    <string name="brand_name">Dinna</string>
+    <string name="manufact_year">Año</string>
+    <string name="year_number">2014</string>
+    <string name="lic_plate">Placas</string>
+    <string name="plate_number">ABC1234</string>
+    <string name="unit_capacity">Capacidad</string>
+    <string name="capacity_number">60 pasajeros</string>
+    <string name="unit_maintenance">Fecha de Mantenimiento</string>
+    <string name="maintenance_date">08/08/2015</string>
+    <string name="unit_driver">Califica el servicio del operador en turno</string>
+    <string name="drivername">Roberto Sánchez</string>
+
+>>>>>>> 9cb7f8085bc879df9ba6c33eb55d883ab4766f39
 </resources>

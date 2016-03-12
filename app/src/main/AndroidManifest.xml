@@ -75,7 +75,7 @@
         <activity
             android:name=".RMEActivity"
             android:label="@string/title_activity_rme"
-            android:parentActivityName=".MapsActivity" >
+            android:parentActivityName=".MapsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
@@ -83,21 +83,21 @@
         <activity
             android:name=".Report"
             android:label="Reportar"
-            android:parentActivityName=".MapsActivity" >
+            android:parentActivityName=".MapsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
         </activity>
         <activity
             android:name=".HelpActivity"
-            android:parentActivityName=".MapsActivity" >
+            android:parentActivityName=".MapsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
         </activity>
         <activity
             android:name=".ConfigurationActivity"
-            android:parentActivityName=".MapsActivity" >
+            android:parentActivityName=".MapsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
@@ -105,7 +105,11 @@
         <activity
             android:name=".ShareActivity"
             android:label="@string/title_activity_share"
+<<<<<<< HEAD
             android:parentActivityName=".MapsActivity" >
+=======
+            android:parentActivityName=".MapsActivity">
+>>>>>>> 9cb7f8085bc879df9ba6c33eb55d883ab4766f39
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
@@ -113,7 +117,11 @@
         <activity
             android:name=".QualifyActivity"
             android:label="@string/title_activity_qualify"
+<<<<<<< HEAD
             android:parentActivityName=".MapsActivity" >
+=======
+            android:parentActivityName=".MapsActivity">
+>>>>>>> 9cb7f8085bc879df9ba6c33eb55d883ab4766f39
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
@@ -121,15 +129,38 @@
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
+<<<<<<< HEAD
             android:parentActivityName=".MapsActivity" >
+=======
+            android:parentActivityName=".MapsActivity">
+>>>>>>> 9cb7f8085bc879df9ba6c33eb55d883ab4766f39
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
         </activity>
         <activity
+<<<<<<< HEAD
             android:name=".InfoRouteActivity"
             android:label="@string/title_activity_info_route"
             android:theme="@style/AppTheme.NoActionBar" >
+=======
+            android:name=".ShowRoute"
+            android:label="@string/title_activity_show_route"
+            android:parentActivityName=".MapsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dev.teralabscom.com.dev_11_03_2016_ruta.MapsActivity" />
+        </activity>
+        <activity
+            android:name=".InfoUnit"
+            android:label="@string/title_activity_info_unit"
+            android:parentActivityName=".ShowRoute"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dev.teralabscom.com.dev_11_03_2016_ruta.ShowRoute" />
+>>>>>>> 9cb7f8085bc879df9ba6c33eb55d883ab4766f39
         </activity>
     </application>
 
