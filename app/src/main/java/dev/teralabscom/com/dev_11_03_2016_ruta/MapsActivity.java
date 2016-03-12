@@ -29,6 +29,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -210,8 +211,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
 
-            Intent FavsActivity = new Intent(MapsActivity.this, FavsActivity.class);
-            startActivity(FavsActivity);
+            Intent Report = new Intent(MapsActivity.this, Report.class);
+            startActivity(Report);
 
         } else if (id == R.id.nav_slideshow) {
 
@@ -274,10 +275,20 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         AsyncTaskRunner runner = new AsyncTaskRunner();
         runner.execute();
 
-        LatLng myLocation = new LatLng(25.70904277, -100.3580612);
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(myLocation, mMap.getMaxZoomLevel() - 5));
-        mMap.setMyLocationEnabled(true);
-        //mMap.setPadding();
+        //LatLng myLocation = new LatLng(25.70904277, -100.3580612);
+        //mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(myLocation, mMap.getMaxZoomLevel() - 5));
+
+        LatLng myLocation = new LatLng(latitude, longitude);
+        CameraPosition camera = CameraPosition.builder().target(myLocation)
+                .zoom(mMap.getMaxZoomLevel() - 3)
+                .bearing(0)
+                .tilt(0)
+                .build();
+
+        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(camera), 4000, null);
+
+
+        mMap.setPadding(0, 160, 0, 90);
         mMap.setBuildingsEnabled(true);
 
         mUiSettings=mMap.getUiSettings();
@@ -285,6 +296,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mUiSettings.setTiltGesturesEnabled(true);
         mUiSettings.setMapToolbarEnabled(false);
         mUiSettings.setMyLocationButtonEnabled(true);
+        mMap.setMyLocationEnabled(true);
+
+        mUiSettings.setZoomControlsEnabled(true);
         //mUiSettings.setZoomControlsEnabled(true);
         addMarkers();
         //mMap.addMarker(new MarkerOptions().position(myLocation).title("My Actual Location").icon(BitmapDescriptorFactory.fromResource(R.drawable.cast_ic_notification_0)));
