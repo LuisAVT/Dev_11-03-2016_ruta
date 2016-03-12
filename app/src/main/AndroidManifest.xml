@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.company.ruta_a_tiempo_app">
+    package="dev.teralabscom.com.dev_11_03_2016_ruta">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -55,7 +55,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.company.ruta_a_tiempo_app.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
